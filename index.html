@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="simple-sidebar.css" >
+
+		<title>The Healthy Student</title>
+		
+	</head>
+
+    <body>
+		<div class="container-fluid noPadding">
+			<div class="row well well-sm noMargin sharpButton" style="padding-bottom:10px; padding-top:20px;">
+				<div class="col-xs-1">
+					<i id="menu-toggle" class="fa fa-bars pull-left optionsButton img-responsive"></i>
+				</div>
+				<div class="col-xs-11">
+					<h3 class="text-left " style="margin-top:3px; margin-left:8px; font-weight:bold">Recipes</h3>
+				</div>
+			</div>
+		</div>
+
+		<div id="wrapper">
+
+			<!-- Sidebar -->
+			<div id="sidebar-wrapper">
+				<ul class="sidebar-nav">
+					<li>
+						<div class="row">
+							<div class="col-xs-2">
+								<a href="index.html"><i class="fa fa-cutlery"></i></a>
+							</div>
+							<div class="col-xs-10">
+								<a href="index.html" style="padding-left:5px;">Recipes</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-2">
+								<a href="weekly.html"><i class="fa fa-calendar"></i></a>
+							</div>
+							<div class="col-xs-10">
+								<a href="weekly.html" style="padding-left:5px;">Weekly Menu</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-2">
+								<a href="list.html"><i class="fa fa-shopping-cart"></i></a>
+							</div>
+							<div class="col-xs-10">
+								<a href="list.html" style="padding-left:5px;">Shopping List</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-2">
+								<a><i class="fa fa-user"></i></a>
+							</div>
+							<div class="col-xs-10">
+								<a style="padding-left:5px;">Profile</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-2">
+								<a><i class="fa fa-info-circle"></i></a>
+							</div>
+							<div class="col-xs-10">
+								<a style="padding-left:5px;">About Us</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+
+		<div class="row">
+			<div class="col-xs-12" style="width:100%; overflow-x: hidden">
+				<img src="dinner.jpg" class="img-responsive" style="width:100%; height:200px" onclick="window.location.href='dinner.html'"/>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12 divider"></div></div>
+		
+		<div class="row">
+			<div class="col-xs-12" style="width:100%; overflow-x: hidden">
+				<img src="lunch.jpg" class="img-responsive" style="width:100%; height:200px" onclick="window.location.href='dinner.html'"/>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12 divider"></div></div>
+		
+		<div class="row">
+			<div class="col-xs-12" style="width:100%; overflow-x: hidden">
+				<img src="breakfast.jpg" class="img-responsive" style="width:100%; height:200px" onclick="window.location.href='dinner.html'"/>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12 divider"></div></div>
+		
+		<div class="row">
+			<div class="col-xs-12" style="width:100%; overflow-x: hidden">
+				<img src="snack.jpg" class="img-responsive" style="width:100%; height:200px" onclick="window.location.href='dinner.html'"/>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12 divider"></div></div>
+		
+		
+		
+
+    </body>
+</html>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+	e.preventDefault();
+	$("#wrapper").toggleClass("toggled");
+});
+
+function logOut(){
+	localStorage.setItem('foodbackLog','no');
+}
+
+</script>

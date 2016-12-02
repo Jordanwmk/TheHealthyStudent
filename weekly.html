@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="simple-sidebar.css" >
+
+		<title>The Healthy Student</title>
+		
+	</head>
+
+	<body style="background-color:#1F1423; overflow-y: hidden">
+		<div class="container-fluid noPadding">
+			<div class="row well well-sm noMargin sharpButton" style="padding-bottom:10px; padding-top:20px;">
+				<div class="col-xs-1">
+					<i id="menu-toggle" class="fa fa-bars pull-left optionsButton img-responsive"></i>
+				</div>
+				<div class="col-xs-11">
+					<h3 class="text-left " style="margin-top:3px; margin-left:8px; font-weight:bold">Weekly Menu</h3>
+				</div>
+			</div>
+		</div>
+		
+		<div id="wrapper">
+
+			<!-- Sidebar -->
+			<div id="sidebar-wrapper">
+				<ul class="sidebar-nav">
+					<li>
+						<div class="row">
+							<div class="col-xs-2">
+								<a href="index.html"><i class="fa fa-cutlery"></i></a>
+							</div>
+							<div class="col-xs-10">
+								<a href="index.html" style="padding-left:5px;">Recipes</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-2">
+								<a href="weekly.html"><i class="fa fa-calendar"></i></a>
+							</div>
+							<div class="col-xs-10">
+								<a href="weekly.html" style="padding-left:5px;">Weekly Menu</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-2">
+								<a href="list.html"><i class="fa fa-shopping-cart"></i></a>
+							</div>
+							<div class="col-xs-10">
+								<a href="list.html" style="padding-left:5px;">Shopping List</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-2">
+								<a><i class="fa fa-user"></i></a>
+							</div>
+							<div class="col-xs-10">
+								<a style="padding-left:5px;">Profile</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-2">
+								<a><i class="fa fa-info-circle"></i></a>
+							</div>
+							<div class="col-xs-10">
+								<a style="padding-left:5px;">About Us</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<table class="table table-bordered">
+			<tbody>
+				<tr style="height:203px; background-color:white;">
+					<td class="col-xs-6">
+						<h2 style="text-align:center; margin-top:0px;"><b>Monday</b></h2>
+						<h4>Dinner:</h4>
+						<h4 style="color:orange">Chicken Stir Fry</h4>
+					</td>
+					<td class="col-xs-6">
+						<h2 style="text-align:center; margin-top:0px;"><b>Tuesday</b></h2>
+						<h4>Dinner:</h4>
+						<h4 style="color:red">Pumpkin Soup</h4>
+					</td>
+				</tr>
+				<tr style="height:203px; background-color:white;">
+					<td class="col-xs-6">
+						<h2 style="text-align:center; margin-top:0px;"><b>Wednesday</b></h2>
+						<h4>Dinner:</h4>
+						<h4 style="color:green">Fish Curry</h4>
+					</td>
+					<td class="col-xs-6">
+						<h2 style="text-align:center; margin-top:0px;"><b>Thursday</b></h2>
+						<h4>Dinner:</h4>
+						<h4 style="color:blue">Beef Stir Fry</h4>
+					</td>
+				</tr>
+				<tr style="height:203px; background-color:white;">
+					<td class="col-xs-6">
+						<h2 style="text-align:center; margin-top:0px;"><b>Friday</b></h2>
+						<h4>Dinner:</h4>
+						<h4 style="color:orange">Roast Chicken and Vegetables</h4>
+					</td>
+					<td class="col-xs-6">
+						<h2 style="text-align:center; margin-top:0px;"><b>Saturday</b></h2>
+						<h4>Dinner:</h4>
+						<h4 style="color:red">Beef and Tomato Pizza</h4>
+					</td>
+				</tr>
+				<tr style="height:203px; background-color:white;">
+					<td class="col-xs-6">
+						<h2 style="text-align:center; margin-top:0px;"><b>Sunday</b></h2>
+						<h4>Dinner:</h4>
+						<h4 style="color:green">Beef & Bean Quesadillas</h4>
+					</td>
+					<td class="col-xs-6">
+						<h4>Key:</h4>
+						
+						<div class="row" style="">
+							<div class="col-xs-2">
+								<button class="btn" style="margin-top:10px; padding-top:8px; background-color:orange;"></button>
+							</div>
+							<div class="col-xs-10">
+								<h4>Sarah</h4>
+							</div>
+						</div>
+						
+						<div class="row" style="">
+							<div class="col-xs-2">
+								<button class="btn" style="margin-top:10px; padding-top:8px; background-color:red;"></button>
+							</div>
+							<div class="col-xs-10">
+								<h4>Kate</h4>
+							</div>
+						</div>
+						
+						<div class="row" style="">
+							<div class="col-xs-2">
+								<button class="btn" style="margin-top:10px; padding-top:8px; background-color:green;"></button>
+							</div>
+							<div class="col-xs-10">
+								<h4>James</h4>
+							</div>
+						</div>
+						
+						<div class="row" style="">
+							<div class="col-xs-2">
+								<button class="btn" style="margin-top:10px; padding-top:8px; background-color:blue;"></button>
+							</div>
+							<div class="col-xs-10">
+								<h4>Barry</h4>
+							</div>
+						</div>
+						
+						
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+		
+
+    </body>
+</html>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+	e.preventDefault();
+	$("#wrapper").toggleClass("toggled");
+});
+
+function logOut(){
+	localStorage.setItem('foodbackLog','no');
+}
+
+</script>
