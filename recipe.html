@@ -99,8 +99,14 @@
 				</div>
 
 				<div class="row">
-					<div class="col-xs-1" style="padding-right:5px; padding-top:1px;">
-						<i class="fa fa-plus-circle fa-lg" style="padding-top:10px"></i>
+					<!--<div class="col-xs-1" style="padding-right:5px; padding-top:1px;">
+						<i class="fa fa-plus-circle fa-lg" style="padding-top:10px" onclick="changeIcon(this)"></i>
+					</div>
+					<div class="col-xs-11" style="width:100px">
+						<h4 class="noPadding" style="width:110px">Weekly Menu</h4>
+					</div>-->
+					<div class="col-xs-1">
+						<i id="lol" class="fa fa-plus-circle fa-2x" style="padding-top:5px" onclick="changeIcon(this)"></i>
 					</div>
 					<div class="col-xs-11" style="width:100px">
 						<h4 class="noPadding" style="width:110px">Weekly Menu</h4>
@@ -122,7 +128,7 @@
 				
 				<div class="row" style="padding-left:20px">
 					<div class="col-xs-1">
-						<i class="fa fa-plus-circle fa-2x" style="padding-top:5px"></i>
+						<i id="lol" class="fa fa-plus-circle fa-2x" style="padding-top:5px" onclick="changeIcon(this)"></i>
 					</div>
 					<div class="col-xs-11">
 						<h4>2 tablespoons olive oil</h4>
@@ -131,7 +137,7 @@
 				
 				<div class="row" style="padding-left:20px">
 					<div class="col-xs-1">
-						<i class="fa fa-plus-circle fa-2x" style="padding-top:5px"></i>
+						<i class="fa fa-plus-circle fa-2x" style="padding-top:5px" onclick="changeIcon(this)"></i>
 					</div>
 					<div class="col-xs-11">
 						<h4>3 cloves garlic, minced</h4>
@@ -140,7 +146,7 @@
 				
 				<div class="row" style="padding-left:20px">
 					<div class="col-xs-1">
-						<i class="fa fa-plus-circle fa-2x" style="padding-top:5px"></i>
+						<i class="fa fa-plus-circle fa-2x" style="padding-top:5px" onclick="changeIcon(this)"></i>
 					</div>
 					<div class="col-xs-11">
 						<h4>200g button mushrooms, sliced thinly</h4>
@@ -154,7 +160,7 @@
 				
 				<div class="row" style="padding-left:20px">
 					<div class="col-xs-1">
-						<i class="fa fa-plus-circle fa-2x" style="padding-top:5px"></i>
+						<i class="fa fa-plus-circle fa-2x" style="padding-top:5px" onclick="changeIcon(this)"></i>
 					</div>
 					<div class="col-xs-11">
 						<h4>1 tablespoon lemon juice</h4>
@@ -163,7 +169,7 @@
 				
 				<div class="row" style="padding-left:20px">
 					<div class="col-xs-1">
-						<i class="fa fa-plus-circle fa-2x" style="padding-top:5x"></i>
+						<i class="fa fa-plus-circle fa-2x" style="padding-top:5x" onclick="changeIcon(this)"></i>
 					</div>
 					<div class="col-xs-11">
 						<h4>1/2 tablespoon honey</h4>
@@ -172,7 +178,7 @@
 				
 				<div class="row" style="padding-left:20px">
 					<div class="col-xs-1">
-						<i class="fa fa-plus-circle fa-2x" style="padding-top:5px"></i>
+						<i class="fa fa-plus-circle fa-2x" style="padding-top:5px" onclick="changeIcon(this)"></i>
 					</div>
 					<div class="col-xs-11">
 						<h4>1 tablespoon sesame oil</h4>
@@ -228,5 +234,10 @@ $("#menu-toggle2").click(function(e) {
 function logOut(){
 	localStorage.setItem('foodbackLog','no');
 }
+
+function changeIcon(e){
+	$(e).toggleClass("fa-plus-circle fa-minus-circle");
+}
+
 
 </script>
