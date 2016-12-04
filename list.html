@@ -107,14 +107,14 @@
 				</div>
 				
 				<div class="col-xs-1">
-					<i class="fa fa-check-circle-o fa-2x" style="padding-top:5px"></i>
+					<i class="fa fa-check-circle-o fa-2x" style="padding-top:5px" onclick="changeIcon(e)"></i>
 				</div>
 				<div class="col-xs-11">
 					<h4>Chicken Breast - 500g</h4>
 				</div>
 				
 				<div class="col-xs-1">
-					<i class="fa fa-circle-o fa-2x" style="padding-top:5px"></i>
+					<i class="fa fa-circle-o fa-2x" style="padding-top:5px" onclick="changeIcon(e)"></i>
 				</div>
 				<div class="col-xs-11">
 					<h4>Beef - 500g</h4>
@@ -129,7 +129,7 @@
 				</div>
 				
 				<div class="col-xs-1">
-					<i class="fa fa-circle-o fa-2x" style="padding-top:5px"></i>
+					<i class="fa fa-circle-o fa-2x" style="padding-top:5px" onclick="changeIcon(e)"></i>
 				</div>
 				<div class="col-xs-11">
 					<h4>Trim Milk - 2L</h4>
@@ -144,21 +144,21 @@
 				</div>
 				
 				<div class="col-xs-1">
-					<i class="fa fa-circle-o fa-2x" style="padding-top:5px"></i>
+					<i class="fa fa-circle-o fa-2x" style="padding-top:5px" onclick="changeIcon(e)"></i>
 				</div>
 				<div class="col-xs-11">
 					<h4>Carrot - 1 medium</h4>
 				</div>
 				
 				<div class="col-xs-1">
-					<i class="fa fa-circle-o fa-2x" style="padding-top:5px"></i>
+					<i class="fa fa-circle-o fa-2x" style="padding-top:5px" onclick="changeIcon(e)"></i>
 				</div>
 				<div class="col-xs-11">
 					<h4>Potato - 4 medium</h4>
 				</div>
 				
 				<div class="col-xs-1">
-					<i class="fa fa-circle-o fa-2x" style="padding-top:5px"></i>
+					<i class="fa fa-circle-o fa-2x" style="padding-top:5px" onclick="changeIcon(e)"></i>
 				</div>
 				<div class="col-xs-11">
 					<h4>Apple - 5</h4>
@@ -184,6 +184,10 @@ $("#menu-toggle2").click(function(e) {
 
 function logOut(){
 	localStorage.setItem('foodbackLog','no');
+}
+	
+function changeIcon(e){
+	$(e).toggleClass("fa-circle-o fa-check-circle-o");
 }
 
 </script>
